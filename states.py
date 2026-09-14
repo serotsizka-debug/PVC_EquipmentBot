@@ -1,0 +1,31 @@
+from aiogram.fsm.state import State, StatesGroup
+
+class BookingStates(StatesGroup):
+    choosing_equipment = State()
+    choosing_quantity = State()
+    choosing_pickup_date = State()
+    choosing_pickup_time = State()
+    choosing_return_date = State()
+    choosing_return_time = State()
+    entering_name = State()
+    entering_phone = State()
+    entering_event = State()
+    confirming = State()
+    editing = State()
+
+class AdminStates(StatesGroup):
+    rejecting = State()
+    changing_time_pickup_date = State()
+    changing_time_pickup_time = State()
+    changing_time_return_date = State()
+    changing_time_return_time = State()
+    issuing = State()
+    returning = State()
+    manual_name = State()
+    manual_phone = State()
+    manual_event = State()
+    manual_equipment = State()
+    manual_pickup_date = State()
+    manual_pickup_time = State()
+    manual_return_date = State()
+    manual_return_time = State()
